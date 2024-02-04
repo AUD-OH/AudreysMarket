@@ -1,0 +1,714 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>나만의 중고마켓</title>
+    <link rel="stylesheet" href="https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/easygpt/default.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+    <style>
+        body {
+            background-color: #ffffff; /* 전체 페이지 배경색을 흰색으로 설정 */
+            color: #000000; /* 기본 글씨색을 검정으로 설정 */
+        }
+        
+        .hero {
+            background-color: #0b2c4c; /* 어두운 배경색 설정 */
+            color: #ffffff; /* 흰색 글씨색 설정 */
+            padding: 20px 0; /* 패딩 추가 */
+            text-align: center; /* 텍스트 가운데 정렬 */
+        }
+
+        .row {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr); /* 네 개의 열로 그리드 분할 */
+            grid-gap: 20px; /* 그리드 간격 설정 */
+        }
+        .card {
+            height: 100%; /* 부모 요소의 높이에 맞춤 */
+            border: none; /* 카드 테두리 제거 */
+            background-color: #f8f9fa; /* 옅은 회색 배경 */
+            transition: transform 0.3s ease; /* 부드러운 애니메이션 추가 */
+        }
+        .card-img-top {
+            max-height: 230px; /* 이미지 최대 높이 설정 */
+            object-fit: cover; /* 이미지 비율을 유지하면서 영역 채움 */
+            width: auto; /* 너비 자동 조절 */
+            height: auto; /* 높이 자동 조절 */
+            max-width: 100%; /* 최대 너비를 카드 너비에 맞춤 */
+        }
+        /* 추가한 스타일 */
+        .container-mt-5 {
+            margin-top: 30px; /* 원하는 여백 크기로 조절 */
+        }
+
+        .card:hover {
+            transform: scale(1.09); /* 마우스를 올릴 때 카드가 약간 커지도록 설정 */
+        }
+</style>
+    </style>
+  </head>
+
+  <body>
+    <div class="hero #0b2c4c text-center py-5">
+      <h1 class="text-white">Audrey's Market</h1>
+      <h2 class="text-white">전 세계를 돌며 정가에 구매한 물건들 팝니다!
+        <h3 class="text-white"></h2> 강남 도곡/대치/양재는 직접거래 or 택배거래 (2개 이상 구매시 택배비 무료)</h2>
+    </div>
+    <div class="container mt-5 container-mt-5">
+      <div class="row">
+
+         <!-- BEOSOUND A1 2nd Generation -->
+         <div class="col-md-4 mb-4"> <!-- 여기에 mb-4 추가 -->
+            <div class="card" style="width: 18rem;">
+                <img src="https://images.ctfassets.net/8cd2csgvqd3m/6NJ5RC6qw6mA9kklkFeJoM/47de4c6d588a6797951cbe989a78724c/A1_gold_1.png?q=90&fm=webp&w=1200&h=1200&fit=fill" class="card-img-top" alt="BEOSOUND A1 2nd Generation">
+                <div class="card-body">
+                    <h5 class="card-title">BEOSOUND A1 2nd Generation 방수 휴대용 블루투스 스피커</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">
+                        <span style="color: red; text-decoration: line-through;">₩419,900</span> 
+                        <span style="color: black;font-weight: bold;">₩208,000</span>
+                    </h6>
+                    <p class="card-text">
+                    영국에서 구매한 제품으로, 최근에 새거 하나 장만해 판매합니다. 
+                    </p>
+                    <a
+                    href="https://www.bang-olufsen.com/ko/kr/speakers/beosound-a1"
+                    class="btn btn-primary"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >
+                    상세 정보 보기
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Remarkable 2-->
+         <div class="col-md-4">
+            <div class="card" style="width: 18rem">
+              <img src="https://cdn.sanity.io/images/0e4kwcjv/production/9a83ddb0733b57f7a562fab218be5ffca0987dfc-1272x840.jpg?w=1920&sharp=20&q=42&auto=format&dpr=2"
+                class="card-img-top"
+                alt="냄비 이미지"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Remarkable 2</h5>
+                <h6 class="card-subtitle mb-2 text-muted">
+                  <span style="color: red; text-decoration: line-through;">₩449,990</span> 
+                  <span style="color: black;font-weight: bold;">₩289,000</span>
+              </h6>
+                <p class="card-text">
+                    종이에 쓰는데 디지털로 옮겨가는 경험! 프랑스에서 구매한 리마커블 케이스와 펜슬 그리고 펜심까지 모두 함께 판매합니다. 원하시면 따로도 구매 가능합니다.
+                </p>
+                <a
+                  href="https://www.youtube.com/watch?v=SWY_bwFMxro&ab_channel=reMarkable"
+                  class="btn btn-primary"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  상세 정보 보기
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Remarkable 2 pencil-->
+         <div class="col-md-4">
+            <div class="card" style="width: 18rem">
+              <img src="https://cdn.sanity.io/images/xpujt61d/production/fa18a3fe7ed0ca19e2c5c6d4117bd7b38e2b0056-2500x1600.png?w=1400&auto=format"
+                class="card-img-top"
+                alt="냄비 이미지"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Remarkable 2 Marker</h5>
+                <h6 class="card-subtitle mb-2 text-muted">
+                  <span style="color: red; text-decoration: line-through;">₩174,990</span> 
+                  <span style="color: black;font-weight: bold;">₩99,000</span>
+              </h6>
+                <p class="card-text">
+                    지우개 달린 검정펜으로 연필처럼 쓰고 쓱쓱 지울수 있습니다.
+                </p>
+                <a
+                  href="https://remarkable.com/store/configure/vertical/KR"
+                  class="btn btn-primary"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  상세 정보 보기
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Remarkable 2 Folio-->
+         <div class="col-md-4">
+            <div class="card" style="width: 18rem">
+              <img src="https://cdn.sanity.io/images/xpujt61d/production/b434cc0b97f272866e1c45e4cce8ad765e2241a1-2500x1600.png?w=1400&auto=format"
+                class="card-img-top"
+                alt="냄비 이미지"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Remarkable 2 Marker</h5>
+                <h6 class="card-subtitle mb-2 text-muted">
+                  <span style="color: red; text-decoration: line-through;">₩99,990</span> 
+                  <span style="color: black;font-weight: bold;">₩49,000</span>
+              </h6>
+                <p class="card-text">
+                    펜과 리마커블이 둘다 쏙 들어가는 편리한 폴리오. 없으면 자꾸 잃어버려 구매했습니다. 구매하시면 Marker tips 펜심은 9개씩 들은 것 두세트 추가로 서비스 드려요.
+                </p>
+                <a
+                  href="https://remarkable.com/store/configure/vertical/KR"
+                  class="btn btn-primary"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  상세 정보 보기
+                </a>
+              </div>
+            </div>
+          </div>
+
+         <!-- 맥북에어 -->
+         <div class="col-md-4">
+            <div class="card" style="width: 18rem">
+              <img src="https://www.apple.com/kr/macbook-air-m1/f/images/shared/router_continuity__euk1phbcdfee_large_2x.jpg"
+                class="card-img-top"
+                alt="냄비 이미지"
+              />
+              <div class="card-body">
+                <h5 class="card-title">애플 맥북에어 13인치 2018 1.6 GHz 듀얼코어 i5 8GB 256GB SSD 스페이스 그레이</h5>
+                <h6 class="card-subtitle mb-2 text-muted">
+                  <span style="color: red; text-decoration: line-through;">$1,299</span> 
+                  <span style="color: black;font-weight: bold;">₩620,000</span>
+              </h6>
+                <p class="card-text">
+                    3달 정도 워드자료만드는데 쓴 컴퓨터 입니다. 사자 마자 한국에 놓고 그동안 전혀 사용을 안하다가 이번 한국에 와서 싸게 내어 놓아요.
+                </p>
+                <a
+                  href="https://www.apple.com/kr/shop/product/MQ052KH/A/magic-keyboard-with-numeric-keypad-%ED%95%9C%EA%B5%AD%EC%96%B4"
+                  class="btn btn-primary"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  상세 정보 보기
+                </a>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Magic Keyboard with Numeric Keypad - 한국어 -->
+         <div class="col-md-4">
+            <div class="card" style="width: 18rem">
+              <img src="https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/MQ052KH?wid=1144&hei=1144&fmt=jpeg&qlt=95&.v=1496099175974"
+                class="card-img-top"
+                alt="냄비 이미지"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Magic Keyboard with Numeric Keypad - 한국어</h5>
+                <h6 class="card-subtitle mb-2 text-muted">
+                  <span style="color: red; text-decoration: line-through;">₩149,000</span> 
+                  <span style="color: black;font-weight: bold;">₩99,000</span>
+              </h6>
+                <p class="card-text">
+                  몇번 사용 안했고 오래되어 뻑뻑할 수 있는 점들을 고려해 싸게 팝니다. 
+                </p>
+                <a
+                  href="https://www.apple.com/kr/shop/product/MQ052KH/A/magic-keyboard-with-numeric-keypad-%ED%95%9C%EA%B5%AD%EC%96%B4"
+                  class="btn btn-primary"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  상세 정보 보기
+                </a>
+              </div>
+            </div>
+          </div>
+
+        <!-- Magic Trackpad - 블랙 Multi-Touch 표면 -->
+        <div class="col-md-4">
+            <div class="card" style="width: 18rem;">
+                <img src="https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/MMMP3?wid=1144&hei=1144&fmt=jpeg&qlt=90&.v=1645136899926" class="card-img-top" alt="AirPods Max Black">
+                <div class="card-body">
+                    <h5 class="card-title">Magic Trackpad - 블랙 Multi-Touch 표면</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">
+                        <span style="color: red; text-decoration: line-through;">₩175,000</span> 
+                        <span style="color: black;font-weight: bold;">₩89,000</span>
+                    </h6>
+                    <p class="card-text">
+                      거의 새 제품입니다.
+                    </p>
+                    <a
+                      href="https://www.apple.com/kr/shop/product/MMMP3KH/A/magic-trackpad-%EB%B8%94%EB%9E%99-multi-touch-%ED%91%9C%EB%A9%B4"
+                      class="btn btn-primary"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      상세 정보 보기
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Gentle Monster 안경 -->
+        <div class="col-md-4">
+            <div class="card" style="width: 18rem;">
+                <img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2F20160912_14%2Fgunfried77_1473663682901pge7S_JPEG%2F%25C1%25B6%25C1%25A4%25BC%25AE_%25B5%25F0%25BE%25EE%25C5%25AC%25B7%25A1%25BD%25C4.jpg&type=sc960_832" class="card-img-top" alt="AirPods Max Black">
+                <div class="card-body">
+                    <h5 class="card-title">Gentle Monster (DEAR CLASSIC 안경) </h5>
+                    <h6 class="card-subtitle mb-2 text-muted">
+                        <span style="color: red; text-decoration: line-through;">₩200,000</span> 
+                        <span style="color: black;font-weight: bold;">₩49,000</span>
+                    </h6>
+                    <p class="card-text">
+                      화이트셔츠에 디어클래식은 도시적이고 샤프한 느낌입니다. 오리지널 패케징과, 케이스, 새 안경닦이, 정품인증서 모두 드립니다. 시대 유행을 타지않고, 남녀관계없이 유행 타지않고 쓰는 소장가치 높은 안경입니다.
+                    </p>
+                    <a
+                      href="https://blog.naver.com/sugaoki/220908670089"
+                      class="btn btn-primary"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      상세 정보 보기
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+        <!-- AirPods(3세대) Lightning 충전 케이스 모델 -->
+        <div class="col-md-4">
+            <div class="card" style="width: 18rem;">
+                <img src="https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/MME73?wid=1144&hei=1144&fmt=jpeg&qlt=90&.v=1632861342000" class="card-img-top" alt="Magic Trackpad Black">
+                <div class="card-body">
+                    <h5 class="card-title">AirPods(3세대) Lightning 충전 케이스 모델</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">
+                        <span style="color: red; text-decoration: line-through;">₩259,000</span> 
+                        <span style="color: black;font-weight: bold;">₩155,000</span>
+                    </h6>
+                    <p class="card-text">
+                    한국에 놓고가 외국에서 새로 사기를 3번 반복해, 이 제품은 구매해서 거의 사용하지 않은 제품입니다.
+                    </p>
+                    <a
+                    href="https://www.apple.com/kr/shop/product/MPNY3KH/A/airpods3%EC%84%B8%EB%8C%80-lightning-%EC%B6%A9%EC%A0%84-%EC%BC%80%EC%9D%B4%EC%8A%A4-%EB%AA%A8%EB%8D%B8"
+                    class="btn btn-primary"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >
+                    상세 정보 보기
+                </a>
+              </div>
+            </div>
+          </div>
+        
+           <!-- AirPods(3세대) Lightning 충전 케이스 모델 -->
+        <div class="col-md-4">
+            <div class="card" style="width: 18rem;">
+                <img src="https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/MME73?wid=1144&hei=1144&fmt=jpeg&qlt=90&.v=1632861342000" class="card-img-top" alt="Magic Trackpad Black">
+                <div class="card-body">
+                    <h5 class="card-title">AirPods(3세대) Lightning 충전 케이스 모델</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">
+                        <span style="color: red; text-decoration: line-through;">₩259,000</span> 
+                        <span style="color: black;font-weight: bold;">₩110,000</span>
+                    </h6>
+                    <p class="card-text">
+                    왼쪽 귀를 영국 택시에 놓고내려 이후 사용하지 않게된 제품으로, 케이스에 이름이 있으며, 오른쪽과 본체 함께 판매합니다. 
+                    </p>
+                    <a
+                    href="https://www.apple.com/kr/shop/product/MPNY3KH/A/airpods3%EC%84%B8%EB%8C%80-lightning-%EC%B6%A9%EC%A0%84-%EC%BC%80%EC%9D%B4%EC%8A%A4-%EB%AA%A8%EB%8D%B8"
+                    class="btn btn-primary"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >
+                    상세 정보 보기
+                </a>
+              </div>
+            </div>
+          </div>
+
+    
+        
+        <!-- AirPods Max (스페이스그레이) -->
+        <div class="col-md-4">
+            <div class="card" style="width: 18rem;">
+                <img src="https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/airpods-max-select-spacegray-202011?wid=940&hei=1112&fmt=png-alpha&.v=1604709508000" class="card-img-top" alt="AirPods Max Black">
+                <div class="card-body">
+                    <h5 class="card-title">AirPods Max (스페이스 그레이)</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">
+                        <span style="color: red; text-decoration: line-through;">₩769,000</span> 
+                        <span style="color: black;font-weight: bold;">₩560,000</span>
+                    </h6>
+                    <p class="card-text">
+                      미국에서 구매한 에어팟 멕스입니다. 사서 몇번 사용하지 않아 새거와 같고, 원하실 경우 따로 미국에서 구매한 에어팟 맥스 홀더도 3만원에 판매 합니다.
+                    </p>
+                    <a
+                    href="https://www.apple.com/kr/shop/buy-airpods/airpods-max/%EC%8A%A4%ED%8E%98%EC%9D%B4%EC%8A%A4-%EA%B7%B8%EB%A0%88%EC%9D%B4"
+                    class="btn btn-primary"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >
+                    상세 정보 보기
+                </a>
+              </div>
+            </div>
+          </div>
+
+           <!-- GRimrock R132A Color.6 -->
+        <div class="col-md-4">
+            <div class="card" style="width: 18rem;">
+                <img src="https://mblogthumb-phinf.pstatic.net/MjAyMzAxMDZfOTgg/MDAxNjcyOTcxMzk2MDQ4.ZbgihIM2N3ux0IHRYPdyafETtbgs4LjWNFbKmoRDM_Mg.pNY-WB7KK70eEURqejmEPfqh4IKv7fc7lskn_Dw6xrUg.JPEG.raumoptical/SE-b4a928b7-fb4c-4e00-ae40-333fa73570c9.jpg?type=w800" class="card-img-top" alt="AirPods Max Black">
+                <div class="card-body">
+                    <h5 class="card-title">Rimrock R132A Color.6 </h5>
+                    <h6 class="card-subtitle mb-2 text-muted">
+                        <span style="color: red; text-decoration: line-through;">₩359,000</span> 
+                        <span style="color: black;font-weight: bold;">₩59,000</span>
+                    </h6>
+                    <p class="card-text">
+                      1983년부터 장인이 만든 일본 안경, 저는 벌써 3개째 같은거 사용중입니다. 오리지널 패케징과, 케이스, 새 안경닦이, 정품인증서 모두 드립니다. 굉장히 세련된 안경이고, 품절이라 구하기 어려운 제품 입니다.
+                    </p>
+                    <a
+                      href="https://rimrockeyewear.com/product/r132acol2/139/"
+                      class="btn btn-primary"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      상세 정보 보기
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+        <!-- AirPods(2세대)s, -->
+        <div class="col-md-4">
+          <div class="card" style="width: 18rem">
+            <img src="https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/MV7N2?wid=1144&hei=1144&fmt=jpeg&qlt=95&.v=1551489688005"
+              class="card-img-top"
+              alt="냄비 이미지"
+            />
+            <div class="card-body">
+              <h5 class="card-title">AirPods(2세대)</h5>
+              <h6 class="card-subtitle mb-2 text-muted">
+                <span style="color: red; text-decoration: line-through;">₩199,000</span> 
+                <span style="color: black;font-weight: bold;">₩70,000</span>
+            </h6>
+              <p class="card-text">
+                오른쪽 이어폰을 잃어버려서 왼쪽 이어폰만 들은 에어팟 2세대 팝니다. 
+              </p>
+              <a
+                href="https://www.apple.com/kr/shop/product/MV7N2KH/A/airpods-%EC%B6%A9%EC%A0%84-%EC%BC%80%EC%9D%B4%EC%8A%A4-%EB%AA%A8%EB%8D%B8"
+                class="btn btn-primary"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                상세 정보 보기
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- AirPods용 무선 충전 케이스, -->
+        <div class="col-md-4">
+            <div class="card" style="width: 18rem">
+              <img src="https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/MR8U2?wid=1144&hei=1144&fmt=jpeg&qlt=95&.v=1701803434628"
+                class="card-img-top"
+                alt="냄비 이미지"
+              />
+              <div class="card-body">
+                <h5 class="card-title">AirPods(2세대) 무선 충전 케이스</h5>
+                <h6 class="card-subtitle mb-2 text-muted">
+                  <span style="color: red; text-decoration: line-through;">₩119,000</span> 
+                  <span style="color: black;font-weight: bold;">₩50,000</span>
+              </h6>
+                <p class="card-text">
+                  에어팟 2세대 "케이스"만 팝니다. 
+                </p>
+                <a
+                  href="https://www.apple.com/kr/shop/product/MR8U2KH/A/airpods%EC%9A%A9-%EB%AC%B4%EC%84%A0-%EC%B6%A9%EC%A0%84-%EC%BC%80%EC%9D%B4%EC%8A%A4"
+                  class="btn btn-primary"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  상세 정보 보기
+                </a>
+              </div>
+            </div>
+          </div>
+
+        <!-- Apple Pencil(2세대), -->
+        <div class="col-md-4">
+            <div class="card" style="width: 18rem">
+              <img src="https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/MU8F2?wid=1144&hei=1144&fmt=jpeg&qlt=90&.v=1540596407165"
+                class="card-img-top"
+                alt="냄비 이미지"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Apple Pencil(2세대)</h5>
+                <h6 class="card-subtitle mb-2 text-muted">
+                  <span style="color: red; text-decoration: line-through;">₩195,000</span> 
+                  <span style="color: black;font-weight: bold;">₩99,000</span>
+              </h6>
+                <p class="card-text">
+                  몇번 사용 안했고, 오른쪽 모서리가 살짝 벗겨진 감이 있어요. 그냥 쓰셔도 되고, 촉만 바꾸셔도 됩니다. 
+                </p>
+                <a
+                  href="https://www.apple.com/kr/shop/product/MU8F2KH/A/apple-pencil2%EC%84%B8%EB%8C%80"
+                  class="btn btn-primary"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  상세 정보 보기
+                </a>
+              </div>
+            </div>
+          </div>
+           
+        <!-- 갤럭시 버즈2 -->
+        <div class="col-md-4">
+            <div class="card" style="width: 18rem">
+              <img src="https://images.samsung.com/kdp/goods/2021/07/27/2f3e8191-20c0-4517-85f7-65488d71730c.png?$PD_GALLERY_L_PNG$"
+                class="card-img-top"
+                alt="냄비 이미지"
+              />
+              <div class="card-body">
+                <h5 class="card-title">A갤럭시 버즈2</h5>
+                <h6 class="card-subtitle mb-2 text-muted">
+                  <span style="color: red; text-decoration: line-through;">₩165,000</span> 
+                  <span style="color: black;font-weight: bold;">₩30,000</span>
+              </h6>
+                <p class="card-text">
+                  두어번 사용한 새제품이나 옛날 버전이라 싸게 팝니다. 블루투스 이어폰 필요하신분 가져가세요
+                </p>
+                <a
+                  href="https://www.samsung.com/sec/buds/galaxy-buds2-r177/SM-R177NLVAKOO/"
+                  class="btn btn-primary"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  상세 정보 보기
+                </a>
+              </div>
+            </div>
+          </div>
+
+           <!-- 로드 스피커-->
+        <div class="col-md-4 mb-4"> <!-- 여기에 mb-4 추가 -->
+            <div class="card" style="width: 18rem;">
+                <img src="https://edge.rode.com/images/page/118/modules/4534/R%C3%98DE_VideoMic_GO_3_QUARTER_LEFT_FRONT_1080x1080.png" class="card-img-top" alt="BEOSOUND A1 2nd Generation">
+                <div class="card-body">
+                    <h5 class="card-title">VideoMic GO Lightweight On-camera Microphone</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">
+                        <span style="color: red; text-decoration: line-through;">₩96,900</span> 
+                        <span style="color: black;font-weight: bold;">₩49,000</span>
+                    </h6>
+                    <p class="card-text">
+                    Youtube 해볼까 해서 구매하고 한번도 안쓴 카메라에 다는 온 카메라 마이크로폰 스피커입니다.  
+                    </p>
+                    <a
+                    href="https://rode.com/en/microphones/on-camera/videomic-go"
+                    class="btn btn-primary"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >
+                    상세 정보 보기
+                </a>
+              </div>
+            </div>
+          </div>
+       
+          <!-- 애플 아이패드 1세대 (A1219) 태블릿 (와이파이 전용), 64GB.-->
+        <div class="col-md-4 mb-4"> <!-- 여기에 mb-4 추가 -->
+            <div class="card" style="width: 18rem;">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/IPad-WiFi-1stGen.jpg/440px-IPad-WiFi-1stGen.jpg" class="card-img-top" alt="BEOSOUND A1 2nd Generation">
+                <div class="card-body">
+                    <h5 class="card-title">애플 아이패드 1세대 (64GB)</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">
+                        <span style="color: red; text-decoration: line-through;">$499</span> 
+                        <span style="color: black;font-weight: bold;">₩100,000</span>
+                    </h6>
+                    <p class="card-text">
+                    처음 출시된 아이패드 1세대로 소장가치가 있는 제품입니다. 이후 경매 가치 있는 제품. 
+                    </p>
+                    <a
+                    href="https://en.wikipedia.org/wiki/IPad_(1st_generation)"
+                    class="btn btn-primary"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >
+                    상세 정보 보기
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- 로로피아나 -->
+        <div class="col-md-4">
+          <div class="card" style="width: 18rem">
+            <img
+              src="https://media.loropiana.com/HYBRIS/FAM/FAM8185/3E35778A-22FF-47A8-858A-4EF135E4277F/FAM8185_A07C_MEDIUM.jpg"
+              class="card-img-top"
+              alt="로로피아나"
+            />
+            <div class="card-body">
+              <h5 class="card-title">이태리 최고급 명품 Loro Piana</h5>
+              <h6 class="card-subtitle mb-2 text-muted">
+                <span style="color: red; text-decoration: line-through;">₩9,990,000</span> 
+                <span style="color: black;font-weight: bold;">₩7,990,000</span>
+            </h6>
+              <p class="card-text">
+                파리에서 구매, 저에게 길이가 길어 파리에서 두번 한국에서 한번 입은 천만원 코트 이태리 최고급 명품 Loro Piana 코트 입니다. 제일 작은 사이즈고, 당시에도 전 세계 품절되어 마지막장을 제가 산것이라 소장가치가 높은 제품입니다. 경매 가치 있는 제품.
+              </p>
+              <a
+                href="https://kr.loropiana.com/en/p/woman/coats-and-capes/the-gift-of-kings-vidal-coat-FAM8185?colorCode=A07C"
+                class="btn btn-primary"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                상세 정보 보기
+              </a>
+            </div>
+          </div>
+        </div>
+        
+         <!-- 루이비통 -->
+         <div class="col-md-4">
+            <div class="card" style="width: 18rem">
+              <img
+                src="https://kr.louisvuitton.com/images/is/image/lv/1/PP_VP_L/%EB%A3%A8%EC%9D%B4-%EB%B9%84%ED%86%B5-%EB%A6%AC%EB%AC%B4%EB%B2%84%EB%B8%94-%EC%B9%BC%EB%9D%BC-%EB%8D%94%EB%B8%94-%ED%8E%98%EC%9D%B4%EC%8A%A4-%EC%BD%94%ED%8A%B8-%EC%9D%98%EB%A5%98--FPCO29AIG141_PM1_Cropped%20worn%20view.png?wid=1440&hei=1440"
+                class="card-img-top"
+                alt="로로피아나"
+              />
+              <div class="card-body">
+                <h5 class="card-title"> Louis Vuitton 이리무버블 칼라 더블 페이스 코트</h5>
+                <h6 class="card-subtitle mb-2 text-muted">
+                  <span style="color: red; text-decoration: line-through;">₩8,470,000</span> 
+                  <span style="color: black;font-weight: bold;">₩6,990,000</span>
+              </h6>
+                <p class="card-text">
+                  2023 스페인에서 몇달전 구매, 너무 이쁜 올해 시즌 코트로 겨울 가을 봄 모두 입을 수 있습니다.
+                </p>
+                <a
+                  href="https://kr.louisvuitton.com/kor-kr/products/removable-collar-double-face-coat-nvprod4340010v/1ABQP2"
+                  class="btn btn-primary"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  상세 정보 보기
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- 에르메스 -->
+         <div class="col-md-4">
+            <div class="card" style="width: 18rem">
+              <img
+                src="https://www.google.co.uk/url?sa=i&url=https%3A%2F%2Fm.feelway.com%2Fm%2Fm_view_goods.php%3Fg_no%3D6399978336&psig=AOvVaw0-AcBH8PF_fB8YSU1EAY7S&ust=1707159319777000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCKD3nZiukoQDFQAAAAAdAAAAABAk"
+                class="card-img-top"
+                alt="로로피아나"
+              />
+              <div class="card-body">
+                <h5 class="card-title"> Hermes 선물받은 에르메스 가방 </h5>
+                <h6 class="card-subtitle mb-2 text-muted">
+                  <span style="color: black;font-weight: bold;">₩250,000</span>
+              </h6>
+                <p class="card-text">
+                  전체에서 제가 유일하게 직접산 물건이 아닌 제품입니다. 든적 없으나 오랫동안 방치되었음.
+                </p>
+                <a
+                  href="https://kr.louisvuitton.com/kor-kr/products/removable-collar-double-face-coat-nvprod4340010v/1ABQP2"
+                  class="btn btn-primary"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  상세 정보 보기
+                </a>
+              </div>
+            </div>
+          </div>
+
+        <!-- Bobbi Brown Special Edition Eye Shadow Palette -->
+        <div class="col-md-4">
+            <div class="card" style="width: 18rem;">
+                <img src="https://image.harrods.com/bobbi-brown-x-tokidoki-cosmo-universe-eye-shadow-palette_19369943_43668452_1000.jpg" class="card-img-top" alt="Bobbi Brown Cosmo Universe Eye Shadow Palette">
+                <div class="card-body">
+                    <h5 class="card-title">Bobbi Brown Special Edition [Cosmo Universe Eye Shadow Palette]</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">
+                        <span style="color: red; text-decoration: line-through;">₩89,000</span> 
+                        <span style="color: black;font-weight: bold;">₩79,000</span>
+                    </h6>
+                    <p class="card-text">
+                    스페셜 에디션으로 작년 겨울에 출시되었던 리미티드 에디션입니다. 솔드아웃되어 현재 구매 어려운 상품이며 총 4번 정도 사용해 거의 새거입니다.
+                    </p>
+                    <a
+                    href="https://www.harrods.com/en-us/shopping/bobbi-brown-x-tokidoki-cosmo-universe-eye-shadow-palette-19369943"
+                    class="btn btn-primary"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >
+                    상세 정보 보기
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- FASIO 영구 컬 마스카라 WP (볼륨) 01 블랙 -->
+        <div class="col-md-4">
+            <div class="card" style="width: 18rem;">
+                <img src="https://www.saradamall.com/data/editor/2205/ef34b6f08af49e642b82b29b73047609_1653546393_8016.png" class="card-img-top" alt="Bobbi Brown Cosmo Universe Eye Shadow Palette">
+                <div class="card-body">
+                    <h5 class="card-title">FASIO 영구 컬 마스카라 WP (볼륨) 01 블랙</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">
+                        <span style="color: red; text-decoration: line-through;">¥1,863 JPY </span> 
+                        <span style="color: black;font-weight: bold;">₩9,000</span>
+                    </h6>
+                    <p class="card-text">
+                    2024년 일본가서 촬영중 필요해 현지에서 두개 구매 했는데, 하나 반가격에 팝니다. 케이스에 워터프루프 마스카라 그리고 슥 발라 지워지는 마스카라 지우는 마스카라까지 세트로 들어있습니다.
+                    </p>
+                    <a
+                    href="https://www.saradamall.com/shop/item.php?it_id=1653546368&device=mobile"
+                    class="btn btn-primary"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >
+                    상세 정보 보기
+                </a>
+              </div>
+            </div>
+          </div>
+
+
+        <!-- 맥 립스틱 -->
+        <div class="col-md-4">
+          <div class="card" style="width: 18rem">
+            <img
+              src="https://tprj-prd-image-output.shilladfs.com/rviewImg/14/01/2019/160241646536076000900900.jpg"
+              class="card-img-top"
+              alt="주전자 이미지"
+            />
+            <div class="card-body">
+              <h5 class="card-title">MAC 맥 Powder Kiss Lipstick, MULL IT OVER - 파우더 키스 립스틱 [멀 잇 오버, 더티 피치]</h5>
+              <h6 class="card-subtitle mb-2 text-muted">
+                <span style="color: red; text-decoration: line-through;">₩40,000 </span> 
+                <span style="color: black;font-weight: bold;">₩30,000</span>
+            </h6>
+              <p class="card-text">
+                누디한 피치톤의 웜한 살구빛 컬러, 차분한 룩. 구매해 한번 발라보고 색이 저랑 안어울려 사용 안한 맥 립스틱 팝니다.
+              </p>
+              <a
+                href="https://www.maccosmetics.co.kr/product/1368/60284/samples/powder-kiss-lipstick"
+                class="btn btn-primary"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                상세 정보 보기
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+   <div class="container mt-5">
+        <div class="row">
